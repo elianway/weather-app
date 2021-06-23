@@ -1,0 +1,109 @@
+:root {
+  --primary-dark: #333;
+  --secondary-dark: #444;
+  --primary-light: #eee;
+  --secondary-light: #ddd;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  font-size: 80%;
+  line-height: 1.6;
+}
+
+body {
+  font-size: 1.6rem;
+  font-family: "Roboto", sans-serif;
+  color: var(--primary-dark);
+  background-color: var(--primary-light);
+}
+
+h2 {
+  font-size: 1.8rem;
+  font-family: inherit;
+  color: inherit;
+}
+
+h3 {
+  font-size: inherit;
+  font-family: inherit;
+  color: inherit;
+}
+
+button {
+  display: block;
+  padding: 1rem;
+  border: none;
+  border-radius: 5px;
+  font-size: inherit;
+  font-family: inherit;
+  color: inherit;
+  cursor: pointer;
+  outline: none;
+}
+
+input {
+  font-family: inherit;
+  font-size: inherit;
+  outline: none;
+}
+
+label {
+  font-family: inherit;
+  font-size: 1.7rem;
+  outline: none;
+  padding-right: 1rem;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  padding: 25px;
+}
+
+.weather-card {
+  display: block;
+  background-color: var(--secondary-light);
+}
+
+.weather-data {
+  display: flex;
+  justify-content: center;
+}
+
+#input-container {
+  display: flex;
+  justify-content: center;
+}
+
+#user-input {
+  font-size: inherit;
+  font-family: inherit;
+  color: inherit;
+}
+
+#input-field {
+  border-radius: 5px;
+  width: 70%;
+}
+
+.submit-container {
+  display: flex;
+  justify-content: center;
+  padding: 1.5rem;
+}
+
+#submit-button:hover {
+  background-color: rgb(163, 163, 163)
+}
+
+#submit-button:active {
+  background-color: rgb(112, 112, 112)
+}

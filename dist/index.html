@@ -4,19 +4,34 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel='stylesheet' href='style.css'>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Yusei+Magic&display=swap"
+      rel="stylesheet"
+    />
     <script src='main.js' defer></script>
   </head>
   <body>
     <div class="container">
       <div class="weather-card">
-        <h2 class="city">London</h2>
-        <h3 class="weather">Cloudy</h3>
-        <h3 class="temperature">72°</h3>
+        <div class="weather-data">
+          <h2 id="city">London</h2>
+        </div>
+        <div class="weather-data">
+          <h3 id="weather">Cloudy</h3>
+        </div>
+        <div class="weather-data">
+          <h3 id="temp">72°</h3>
+        </div>
         <div class="input-form">
           <form id="user-input">
-            <label for="input-field">City: </label>
-            <input type="text" id="input-field">
-            <button id="submit-button">Submit</button>
+            <div id="input-container">
+              <label for="input-field">City: </label>
+              <input type="text" id="input-field">
+            </div>
+            <div class="submit-container">
+              <button id="submit-button">Submit</button>
+            </div>
           </form>
         </div>
       </div>

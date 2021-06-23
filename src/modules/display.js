@@ -24,9 +24,9 @@ export default class Display {
   }
 
   static updateDisplay(data) {
-    const targetCity = document.querySelector('.city');
-    const targetWeather = document.querySelector('.weather');
-    const targetTemp = document.querySelector('.temperature');
+    const targetCity = document.getElementById('city');
+    const targetWeather = document.getElementById('weather');
+    const targetTemp = document.getElementById('temp');
     targetCity.textContent = `${data.city}`;
     targetWeather.textContent = `${data.weather}`;
     targetTemp.textContent = `${data.temperature}°`;
